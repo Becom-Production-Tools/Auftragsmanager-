@@ -53,6 +53,7 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.bBGconfig = New System.Windows.Forms.Button()
         Me.bTrash = New System.Windows.Forms.Button()
+        Me.Pruef5 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -242,7 +243,7 @@ Partial Class Form1
         Me.ENG1.Location = New System.Drawing.Point(15, 128)
         Me.ENG1.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.ENG1.Name = "ENG1"
-        Me.ENG1.Size = New System.Drawing.Size(207, 95)
+        Me.ENG1.Size = New System.Drawing.Size(207, 70)
         Me.ENG1.TabIndex = 13
         Me.ENG1.Text = "ENGMATEC 1"
         Me.ENG1.UseVisualStyleBackColor = True
@@ -250,10 +251,10 @@ Partial Class Form1
         'ENG2
         '
         Me.ENG2.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ENG2.Location = New System.Drawing.Point(15, 233)
+        Me.ENG2.Location = New System.Drawing.Point(15, 207)
         Me.ENG2.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.ENG2.Name = "ENG2"
-        Me.ENG2.Size = New System.Drawing.Size(207, 95)
+        Me.ENG2.Size = New System.Drawing.Size(207, 70)
         Me.ENG2.TabIndex = 14
         Me.ENG2.Text = "ENGMATEC 2"
         Me.ENG2.UseVisualStyleBackColor = True
@@ -261,10 +262,10 @@ Partial Class Form1
         'ENG3
         '
         Me.ENG3.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ENG3.Location = New System.Drawing.Point(15, 339)
+        Me.ENG3.Location = New System.Drawing.Point(15, 287)
         Me.ENG3.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.ENG3.Name = "ENG3"
-        Me.ENG3.Size = New System.Drawing.Size(207, 95)
+        Me.ENG3.Size = New System.Drawing.Size(207, 70)
         Me.ENG3.TabIndex = 15
         Me.ENG3.Text = "ENGMATEC 3"
         Me.ENG3.UseVisualStyleBackColor = True
@@ -331,11 +332,23 @@ Partial Class Form1
         Me.bTrash.Text = "TRASH Pfad"
         Me.bTrash.UseVisualStyleBackColor = True
         '
+        'Pruef5
+        '
+        Me.Pruef5.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Pruef5.Location = New System.Drawing.Point(15, 367)
+        Me.Pruef5.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.Pruef5.Name = "Pruef5"
+        Me.Pruef5.Size = New System.Drawing.Size(207, 70)
+        Me.Pruef5.TabIndex = 21
+        Me.Pruef5.Text = "Prüfanlage 5"
+        Me.Pruef5.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 985)
+        Me.Controls.Add(Me.Pruef5)
         Me.Controls.Add(Me.bTrash)
         Me.Controls.Add(Me.bBGconfig)
         Me.Controls.Add(Me.Button4)
@@ -396,4 +409,5 @@ Partial Class Form1
     Friend WithEvents ZKWArtikelnummer As DataGridViewTextBoxColumn
     Friend WithEvents bBGconfig As Button
     Friend WithEvents bTrash As Button
+    Friend WithEvents Pruef5 As Button
 End Class

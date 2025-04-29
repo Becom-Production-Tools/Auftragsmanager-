@@ -227,6 +227,17 @@ Public Class Form1
             'End If
         End If
 
+        If selected.Text = "Prüfanlage 5" Then
+
+            File.Copy(ConfigurationSettings.AppSettings("pathin") + "\" + selectedprimerauftrag.Text, ConfigurationSettings.AppSettings("pathouttrash") + "\" + selectedprimerauftrag.Text, True)
+            File.Move(ConfigurationSettings.AppSettings("pathin") + "\" + selectedprimerauftrag.Text, ConfigurationSettings.AppSettings("pathout5") + selectedprimerauftrag.Text)
+
+            'If selectedsecunderauftrag.Text <> "" Then
+            'File.Copy(ConfigurationSettings.AppSettings("pathin") + "\" + selectedsecunderauftrag.Text, ConfigurationSettings.AppSettings("pathouttrash") + "\" + selectedsecunderauftrag.Text, True)
+            'File.Delete(ConfigurationSettings.AppSettings("pathin") + "\" + selectedsecunderauftrag.Text)
+            'End If
+        End If
+
         readfiles(ConfigurationSettings.AppSettings("pathin"))
 
     End Sub
@@ -347,6 +358,9 @@ Public Class Form1
     Private Sub ENG3_Click(sender As Object, e As EventArgs) Handles ENG3.Click
         selected.Text = ENG3.Text
         'movedeletebutton.Enabled = True
+    End Sub
+    Private Sub Pruef5_Click(sender As Object, e As EventArgs) Handles Pruef5.Click
+        selected.Text = Pruef5.Text
     End Sub
     Private Sub bBGconfig_Click(sender As Object, e As EventArgs) Handles bBGconfig.Click
         Process.Start(Application.StartupPath & "\baugruppen.xml")
